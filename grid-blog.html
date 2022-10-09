@@ -1,0 +1,553 @@
+<!DOCTYPE html  >
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>Grid Blog</title>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:300,400,700,400italic%7CCormorant+Garamond:400,700,400italic"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+		<!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/></a></div>
+    <script src="js/html5shiv.min.js"></script>
+		<![endif]-->
+  </head>
+  <body>
+    <!-- Page Loader-->
+    <div class="page-loader" id="page-loader">
+      <div class="page-loader-body">
+        <svg width="40" height="40" viewbox="0 0 40 40">
+          <polygon class="rect" points="0 0 0 40 40 40 40 0"></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- Page-->
+    <div class="page">
+      <!-- RD Navbar-->
+      <header class="page-header section">
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fullwidth" data-lg-layout="rd-navbar-fullwidth" data-xl-device-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-fullwidth" data-xxl-device-layout="rd-navbar-fullwidth" data-xxl-layout="rd-navbar-fullwidth" data-stick-up-clone="false" data-md-stick-up-offset="130px" data-lg-stick-up-offset="157px" data-xl-stick-up-offset="157px" data-md-stick-up="true" data-lg-stick-up="true" data-xl-stick-up="true">
+            <div class="rd-navbar-aside-outer bg-gray-4">
+              <div class="rd-navbar-aside">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel rd-navbar-panel-dark">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html">
+                      <div class="brand__name"><img class="brand__logo-dark" src="images/logo-inverse-316x41.png" alt="" width="316" height="41"/><img class="brand__logo-light" src="images/logo-inverse-316x41.png" alt="" width="316" height="41"/>
+                      </div><span class="brand__slogan">Breaking political news</span></a></div>
+                </div>
+                <div class="rd-navbar-content-outer">
+                  <div class="rd-navbar-content__toggle rd-navbar-fullwidth--hidden" data-rd-navbar-toggle=".rd-navbar-content"><span></span></div>
+                  <div class="rd-navbar-content">
+                    <div>
+                      <p class="rd-navbar-time" id="demo" data-current-date=""></p>
+                    </div>
+                    <div class="rd-navbar-element">
+                      <ul class="list-icons list-inline-sm">
+                        <li><a class="icon icon-xs icon-lighter fa fa-facebook" href="#"></a></li>
+                        <li><a class="icon icon-xs icon-lighter fa fa-twitter" href="#"></a></li>
+                        <li><a class="icon icon-xs icon-lighter fa fa-instagram" href="#"></a></li>
+                        <li><a class="icon icon-xs icon-lighter fa fa-google-plus" href="#"></a></li>
+                        <li><a class="icon icon-xs icon-lighter fa fa-pinterest" href="#"></a></li>
+                        <li><a class="icon icon-xs icon-lighter fa fa-linkedin" href="#"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Nav-->
+                <div class="rd-navbar-nav-wrap">
+                  <!-- RD Navbar Search-->
+                  <div class="rd-navbar-search rd-navbar-search-toggled">
+                    <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"></button>
+                    <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
+                      <div class="form-wrap">
+                        <input class="form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"/>
+                        <label class="form-label" for="rd-navbar-search-form-input">Search</label>
+                      </div>
+                      <button class="rd-navbar-search-submit" type="submit"></button>
+                      <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                    </form>
+                  </div>
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="active"><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="#">About</a>
+                    </li>
+                    <li><a href="#">Blog</a>
+                      <!-- RD Navbar Dropdown-->
+                      <ul class="rd-navbar-dropdown">
+                        <li><a href="classic-blog.html">Classic Blog</a>
+                        </li>
+                        <li><a href="grid-blog.html">Grid Blog</a>
+                        </li>
+                        <li><a href="masonry-blog.html">Masonry Blog</a>
+                        </li>
+                        <li><a href="modern-blog.html">Modern Blog</a>
+                        </li>
+                        <li><a href="blog-post.html">Blog Post</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Shop</a>
+                    </li>
+                    <li><a href="contacts.html">Contacts</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Breadcrumbs-->
+      <section class="breadcrumbs-custom bg-image bg-image-dark" style="background-image: url(images/breadcrumbs-image-1-1920x350.jpg);">
+        <div class="container">
+          <h1 class="breadcrumbs-custom__title">Grid Blog</h1>
+          <ul class="breadcrumbs-custom__path">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classic-blog.html">Blogs</a></li>
+            <li class="active">Grid Blog</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Blog-->
+      <section class="section section-lg bg-gray-1 text-center">
+        <div class="container container-wide">
+          <div class="row row-90">
+            <div class="col-lg-9">
+              <div class="row row-30 row-flex">
+                <div class="col-md-6 col-xxl-4">
+                  <!-- Post Boxed-->
+                  <article class="post-boxed"><a class="post-boxed__image-wrap" href="blog-post.html"><img class="post-boxed__image" src="images/blog-grid-1-420x360.jpg" alt="" width="420" height="360"/></a>
+                    <div class="post-boxed__body">
+                      <div class="post-boxed__main">
+                        <div class="post-boxed__meta">
+                          <ul class="post-boxed__tags">
+                            <li><a href="#">Politics</a></li>
+                          </ul>
+                          <div class="post-boxed__info"><span>by</span><a class="post-boxed__user" href="#">Sam Wilson</a></div>
+                        </div>
+                        <p class="post-boxed__title"><a href="blog-post.html">How Americans Support Border Wall, a Tool Against Immigrants</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate ad velit perspiciatis ipsa! Nostrum voluptate ex at laborum esse!</p>
+                      </div>
+                      <div class="post-boxed__footer">
+                        <time class="post-boxed__time" datetime="2018">Nov 4, 2018</time><a class="post-boxed__link" href="blog-post.html">Learn More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6 col-xxl-4">
+                  <!-- Post Boxed-->
+                  <article class="post-boxed"><a class="post-boxed__image-wrap" href="blog-post.html"><img class="post-boxed__image" src="images/blog-grid-2-420x360.jpg" alt="" width="420" height="360"/></a>
+                    <div class="post-boxed__body">
+                      <div class="post-boxed__main">
+                        <div class="post-boxed__meta">
+                          <ul class="post-boxed__tags">
+                            <li><a href="#">Politics</a></li>
+                          </ul>
+                          <div class="post-boxed__info"><span>by</span><a class="post-boxed__user" href="#">Lana Rodriguez</a></div>
+                        </div>
+                        <p class="post-boxed__title"><a href="blog-post.html">Bob Corker Says White House is 'adult day care center' After Trump Twitter Hit</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate ad velit perspiciatis ipsa! Nostrum voluptate ex at laborum esse!</p>
+                      </div>
+                      <div class="post-boxed__footer">
+                        <time class="post-boxed__time" datetime="2018">Nov 4, 2018</time><a class="post-boxed__link" href="blog-post.html">Learn More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6 col-xxl-4">
+                  <!-- Post Boxed-->
+                  <article class="post-boxed"><a class="post-boxed__image-wrap" href="blog-post.html"><img class="post-boxed__image" src="images/blog-grid-3-420x360.jpg" alt="" width="420" height="360"/></a>
+                    <div class="post-boxed__body">
+                      <div class="post-boxed__main">
+                        <div class="post-boxed__meta">
+                          <ul class="post-boxed__tags">
+                            <li><a href="#">Politics</a></li>
+                          </ul>
+                          <div class="post-boxed__info"><span>by</span><a class="post-boxed__user" href="#">Sam Wilson</a></div>
+                        </div>
+                        <p class="post-boxed__title"><a href="blog-post.html">Trump Could Put US 'on a dangerous path', Says J. Benton</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate ad velit perspiciatis ipsa! Nostrum voluptate ex at laborum esse!</p>
+                      </div>
+                      <div class="post-boxed__footer">
+                        <time class="post-boxed__time" datetime="2018">Nov 4, 2018</time><a class="post-boxed__link" href="blog-post.html">Learn More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6 col-xxl-4">
+                  <!-- Post Boxed-->
+                  <article class="post-boxed"><a class="post-boxed__image-wrap" href="blog-post.html"><img class="post-boxed__image" src="images/blog-grid-4-420x360.jpg" alt="" width="420" height="360"/></a>
+                    <div class="post-boxed__body">
+                      <div class="post-boxed__main">
+                        <div class="post-boxed__meta">
+                          <ul class="post-boxed__tags">
+                            <li><a href="#">Politics</a></li>
+                          </ul>
+                          <div class="post-boxed__info"><span>by</span><a class="post-boxed__user" href="#">Lana Rodriguez</a></div>
+                        </div>
+                        <p class="post-boxed__title"><a href="blog-post.html">Local Candidates are Preparing for Elections</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate ad velit perspiciatis ipsa! Nostrum voluptate ex at laborum esse!</p>
+                      </div>
+                      <div class="post-boxed__footer">
+                        <time class="post-boxed__time" datetime="2018">Nov 4, 2018</time><a class="post-boxed__link" href="blog-post.html">Learn More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6 col-xxl-4">
+                  <!-- Post Boxed-->
+                  <article class="post-boxed"><a class="post-boxed__image-wrap" href="blog-post.html"><img class="post-boxed__image" src="images/blog-grid-5-420x360.jpg" alt="" width="420" height="360"/></a>
+                    <div class="post-boxed__body">
+                      <div class="post-boxed__main">
+                        <div class="post-boxed__meta">
+                          <ul class="post-boxed__tags">
+                            <li><a href="#">Politics</a></li>
+                          </ul>
+                          <div class="post-boxed__info"><span>by</span><a class="post-boxed__user" href="#">Sam Wilson</a></div>
+                        </div>
+                        <p class="post-boxed__title"><a href="blog-post.html">Gun Laws vs. Mass Shootings</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate ad velit perspiciatis ipsa! Nostrum voluptate ex at laborum esse!</p>
+                      </div>
+                      <div class="post-boxed__footer">
+                        <time class="post-boxed__time" datetime="2018">Nov 4, 2018</time><a class="post-boxed__link" href="blog-post.html">Learn More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6 col-xxl-4">
+                  <!-- Post Boxed-->
+                  <article class="post-boxed"><a class="post-boxed__image-wrap" href="blog-post.html"><img class="post-boxed__image" src="images/blog-grid-6-420x360.jpg" alt="" width="420" height="360"/></a>
+                    <div class="post-boxed__body">
+                      <div class="post-boxed__main">
+                        <div class="post-boxed__meta">
+                          <ul class="post-boxed__tags">
+                            <li><a href="#">Politics</a></li>
+                          </ul>
+                          <div class="post-boxed__info"><span>by</span><a class="post-boxed__user" href="#">Sam Wilson</a></div>
+                        </div>
+                        <p class="post-boxed__title"><a href="blog-post.html">How Modern Youth Participates in Politics</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate ad velit perspiciatis ipsa! Nostrum voluptate ex at laborum esse!</p>
+                      </div>
+                      <div class="post-boxed__footer">
+                        <time class="post-boxed__time" datetime="2018">Nov 4, 2018</time><a class="post-boxed__link" href="blog-post.html">Learn More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-12" data-load-trigger="#button-load">
+                  <div class="row row-30 row-flex">
+                    <div class="col-md-6 col-xxl-4">
+                      <!-- Post Boxed-->
+                      <article class="post-boxed"><a class="post-boxed__image-wrap" href="blog-post.html"><img class="post-boxed__image" src="images/blog-grid-1-420x360.jpg" alt="" width="420" height="360"/></a>
+                        <div class="post-boxed__body">
+                          <div class="post-boxed__main">
+                            <div class="post-boxed__meta">
+                              <ul class="post-boxed__tags">
+                                <li><a href="#">Politics</a></li>
+                              </ul>
+                              <div class="post-boxed__info"><span>by</span><a class="post-boxed__user" href="#">Sam Wilson</a></div>
+                            </div>
+                            <p class="post-boxed__title"><a href="blog-post.html">How Americans Support Border Wall, a Tool Against Immigrants</a></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate ad velit perspiciatis ipsa! Nostrum voluptate ex at laborum esse!</p>
+                          </div>
+                          <div class="post-boxed__footer">
+                            <time class="post-boxed__time" datetime="2018">Nov 4, 2018</time><a class="post-boxed__link" href="blog-post.html">Learn More</a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-6 col-xxl-4">
+                      <!-- Post Boxed-->
+                      <article class="post-boxed"><a class="post-boxed__image-wrap" href="blog-post.html"><img class="post-boxed__image" src="images/blog-grid-2-420x360.jpg" alt="" width="420" height="360"/></a>
+                        <div class="post-boxed__body">
+                          <div class="post-boxed__main">
+                            <div class="post-boxed__meta">
+                              <ul class="post-boxed__tags">
+                                <li><a href="#">Politics</a></li>
+                              </ul>
+                              <div class="post-boxed__info"><span>by</span><a class="post-boxed__user" href="#">Lana Rodriguez</a></div>
+                            </div>
+                            <p class="post-boxed__title"><a href="blog-post.html">Bob Corker Says White House is 'adult day care center' After Trump Twitter Hit</a></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate ad velit perspiciatis ipsa! Nostrum voluptate ex at laborum esse!</p>
+                          </div>
+                          <div class="post-boxed__footer">
+                            <time class="post-boxed__time" datetime="2018">Nov 4, 2018</time><a class="post-boxed__link" href="blog-post.html">Learn More</a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-6 col-xxl-4">
+                      <!-- Post Boxed-->
+                      <article class="post-boxed"><a class="post-boxed__image-wrap" href="blog-post.html"><img class="post-boxed__image" src="images/blog-grid-3-420x360.jpg" alt="" width="420" height="360"/></a>
+                        <div class="post-boxed__body">
+                          <div class="post-boxed__main">
+                            <div class="post-boxed__meta">
+                              <ul class="post-boxed__tags">
+                                <li><a href="#">Politics</a></li>
+                              </ul>
+                              <div class="post-boxed__info"><span>by</span><a class="post-boxed__user" href="#">Sam Wilson</a></div>
+                            </div>
+                            <p class="post-boxed__title"><a href="blog-post.html">Trump Could Put US 'on a dangerous path', Says J. Benton</a></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate ad velit perspiciatis ipsa! Nostrum voluptate ex at laborum esse!</p>
+                          </div>
+                          <div class="post-boxed__footer">
+                            <time class="post-boxed__time" datetime="2018">Nov 4, 2018</time><a class="post-boxed__link" href="blog-post.html">Learn More</a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-6 col-xxl-4">
+                      <!-- Post Boxed-->
+                      <article class="post-boxed"><a class="post-boxed__image-wrap" href="blog-post.html"><img class="post-boxed__image" src="images/blog-grid-4-420x360.jpg" alt="" width="420" height="360"/></a>
+                        <div class="post-boxed__body">
+                          <div class="post-boxed__main">
+                            <div class="post-boxed__meta">
+                              <ul class="post-boxed__tags">
+                                <li><a href="#">Politics</a></li>
+                              </ul>
+                              <div class="post-boxed__info"><span>by</span><a class="post-boxed__user" href="#">Lana Rodriguez</a></div>
+                            </div>
+                            <p class="post-boxed__title"><a href="blog-post.html">Local Candidates are Preparing for Elections</a></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate ad velit perspiciatis ipsa! Nostrum voluptate ex at laborum esse!</p>
+                          </div>
+                          <div class="post-boxed__footer">
+                            <time class="post-boxed__time" datetime="2018">Nov 4, 2018</time><a class="post-boxed__link" href="blog-post.html">Learn More</a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-6 col-xxl-4">
+                      <!-- Post Boxed-->
+                      <article class="post-boxed"><a class="post-boxed__image-wrap" href="blog-post.html"><img class="post-boxed__image" src="images/blog-grid-5-420x360.jpg" alt="" width="420" height="360"/></a>
+                        <div class="post-boxed__body">
+                          <div class="post-boxed__main">
+                            <div class="post-boxed__meta">
+                              <ul class="post-boxed__tags">
+                                <li><a href="#">Politics</a></li>
+                              </ul>
+                              <div class="post-boxed__info"><span>by</span><a class="post-boxed__user" href="#">Sam Wilson</a></div>
+                            </div>
+                            <p class="post-boxed__title"><a href="blog-post.html">Gun Laws vs. Mass Shootings</a></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate ad velit perspiciatis ipsa! Nostrum voluptate ex at laborum esse!</p>
+                          </div>
+                          <div class="post-boxed__footer">
+                            <time class="post-boxed__time" datetime="2018">Nov 4, 2018</time><a class="post-boxed__link" href="blog-post.html">Learn More</a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-6 col-xxl-4">
+                      <!-- Post Boxed-->
+                      <article class="post-boxed"><a class="post-boxed__image-wrap" href="blog-post.html"><img class="post-boxed__image" src="images/blog-grid-6-420x360.jpg" alt="" width="420" height="360"/></a>
+                        <div class="post-boxed__body">
+                          <div class="post-boxed__main">
+                            <div class="post-boxed__meta">
+                              <ul class="post-boxed__tags">
+                                <li><a href="#">Politics</a></li>
+                              </ul>
+                              <div class="post-boxed__info"><span>by</span><a class="post-boxed__user" href="#">Sam Wilson</a></div>
+                            </div>
+                            <p class="post-boxed__title"><a href="blog-post.html">How Modern Youth Participates in Politics</a></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate ad velit perspiciatis ipsa! Nostrum voluptate ex at laborum esse!</p>
+                          </div>
+                          <div class="post-boxed__footer">
+                            <time class="post-boxed__time" datetime="2018">Nov 4, 2018</time><a class="post-boxed__link" href="blog-post.html">Learn More</a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="button-load button-load-icon" id="button-load"></button>
+              <!-- Pagination-->
+              <ul class="pagination-custom">
+                <li class="pagination-control disabled"><a href="#">Prev</a></li>
+                <li class="active"><a href="#">01</a></li>
+                <li><a href="#">02</a></li>
+                <li><a href="#">03</a></li>
+                <li class="pagination-spacer"></li>
+                <li><a href="#">10</a></li>
+                <li class="pagination-control"><a href="#">Next</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 layout-aside-wrap_extended">
+              <div class="layout-aside">
+                <div class="layout-aside__item">
+                  <h4 class="heading-bordered">Search</h4>
+                  <!-- RD Search-->
+                  <form class="rd-search rd-search_inline" action="search-results.html" method="GET">
+                    <div class="form-wrap">
+                      <input class="form-input" id="rd-search-form-input" type="text" name="s" autocomplete="off"/>
+                    </div>
+                    <div class="form-button">
+                      <button class="rd-search-submit__inline" type="submit">search</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="layout-aside__item">
+                  <h4 class="heading-bordered">Archive</h4>
+                  <ul class="list-marked list-marked_light">
+                    <li><a href="#">November 2018</a></li>
+                    <li><a href="#">October 2018</a></li>
+                    <li><a href="#">September 2018</a></li>
+                    <li><a href="#">August 2018</a></li>
+                    <li><a href="#">July 2018</a></li>
+                  </ul>
+                </div>
+                <div class="layout-aside__item">
+                  <h4 class="heading-bordered">Gallery</h4>
+                  <div class="grid-3" data-lightgallery="group">
+                    <div class="grid-item"><a class="thumb-minimal" href="images/inline-gallery-1-1200x800-original.jpg" data-lightgallery="group-item">
+                        <div class="thumb-minimal__image-wrap"><img class="thumb-minimal__image" src="images/inline-gallery-1-110x110.jpg" alt="" width="110" height="110"/>
+                        </div>
+                        <div class="thumb-minimal__caption"></div></a></div>
+                    <div class="grid-item"><a class="thumb-minimal" href="images/inline-gallery-2-1200x800-original.jpg" data-lightgallery="group-item">
+                        <div class="thumb-minimal__image-wrap"><img class="thumb-minimal__image" src="images/inline-gallery-2-110x110.jpg" alt="" width="110" height="110"/>
+                        </div>
+                        <div class="thumb-minimal__caption"></div></a></div>
+                    <div class="grid-item"><a class="thumb-minimal" href="images/inline-gallery-3-1200x800-original.jpg" data-lightgallery="group-item">
+                        <div class="thumb-minimal__image-wrap"><img class="thumb-minimal__image" src="images/inline-gallery-3-110x110.jpg" alt="" width="110" height="110"/>
+                        </div>
+                        <div class="thumb-minimal__caption"></div></a></div>
+                    <div class="grid-item"><a class="thumb-minimal" href="images/inline-gallery-4-1200x800-original.jpg" data-lightgallery="group-item">
+                        <div class="thumb-minimal__image-wrap"><img class="thumb-minimal__image" src="images/inline-gallery-4-110x110.jpg" alt="" width="110" height="110"/>
+                        </div>
+                        <div class="thumb-minimal__caption"></div></a></div>
+                    <div class="grid-item"><a class="thumb-minimal" href="images/inline-gallery-5-1200x800-original.jpg" data-lightgallery="group-item">
+                        <div class="thumb-minimal__image-wrap"><img class="thumb-minimal__image" src="images/inline-gallery-5-110x110.jpg" alt="" width="110" height="110"/>
+                        </div>
+                        <div class="thumb-minimal__caption"></div></a></div>
+                    <div class="grid-item"><a class="thumb-minimal" href="images/inline-gallery-6-800x1200-original.jpg" data-lightgallery="group-item">
+                        <div class="thumb-minimal__image-wrap"><img class="thumb-minimal__image" src="images/inline-gallery-6-110x110.jpg" alt="" width="110" height="110"/>
+                        </div>
+                        <div class="thumb-minimal__caption"></div></a></div>
+                  </div>
+                </div>
+                <div class="layout-aside__item">
+                  <h4 class="heading-bordered">Categories</h4>
+                  <ul class="list-marked list-marked_light">
+                    <li><a href="#">Debate<span class="inner-text">(621 posts)</span></a></li>
+                    <li><a href="#">Strategic<span class="inner-text">(352 posts)</span></a></li>
+                    <li><a href="#">Politics<span class="inner-text">(280 posts)</span></a></li>
+                    <li><a href="#">President<span class="inner-text">(151 posts)</span></a></li>
+                    <li><a href="#">United States Government<span class="inner-text">(98 posts)</span></a></li>
+                  </ul>
+                </div>
+                <div class="layout-aside__item">
+                  <h4 class="heading-bordered">Tags</h4>
+                  <ul class="list-tags">
+                    <li><a href="#">Debate</a></li>
+                    <li><a href="#">Strategic</a></li>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Parliament</a></li>
+                    <li><a href="#">President</a></li>
+                    <li><a href="#">Flag</a></li>
+                    <li><a href="#">Democracy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page Footer-->
+      <footer class="section footer-creative">
+        <div class="footer-creative__main bg-gray-4">
+          <div class="container container-wide">
+            <div class="row row-50 justify-content-md-center justify-content-xl-between">
+<div class="col-md-12 col-lg-10 col-xl-4 col-xxl-4">
+                <h4 class="footer-creative__title">Contact Information</h4>
+                <div class="row row-20">
+                  <div class="col-12 col-sm-6">
+                    <h5>Myrtle Beach</h5>
+                    <ul class="list-md">
+                      <li class="object-inline object-inline_md"><span class="icon icon-sm icon-primary mdi mdi-map-marker"></span>
+                        <div><a href="#">
+                          Myrtle Beach SC 29577
+                          United States of America</a></div>
+                      </li>
+                      <li class="object-inline object-inline_md"><span class="icon icon-sm icon-primary mdi mdi-email-outline"></span>
+                        <div><a href="mailto:#">contact@experiencecbd.com</a></div>
+                      </li>
+                      <li class="object-inline object-inline_md"><span class="icon icon-sm icon-primary mdi mdi-phone"></span>
+                        <div><a href="tel:(843) 213-1319">(843) 213-1319</a></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-10 col-xl-4">
+                <h4 class="footer-creative__title">Tags</h4>
+                <ul class="list-tags">
+                  <li><a href="https://experiencecbd.com/blogs/news/tagged/420">420</a></li>
+                  <li><a href="https://experiencecbd.com/blogs/news/tagged/cbd-facts">CBD FACTS</a></li>
+                  <li><a href="https://experiencecbd.com/blogs/news/tagged/cbd-news">CBD NEWS</a></li>
+                  <li><a href="https://experiencecbd.com/blogs/news/tagged/cbd-legality">CBD LEGALITY</a></li>
+                  <li><a href="https://experiencecbd.com/blogs/news/tagged/history">HISTORY</a></li>
+                  <li><a href="https://experiencecbd.com/blogs/news/tagged/is-cbd-legal">CBD LEGAL</a></li>
+                  <li><a href="https://experiencecbd.com/blogs/news/tagged/cbd-for-pets">CBD FOR PETS</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-10 col-xl-4">
+                <h4 class="footer-creative__title">Newsletter</h4>
+                <p class="text-width-1">Enter your email address to get the latest news, special offers and other information delivered right to your inbox.</p>
+                      <!-- RD Mailform-->
+                      <form class="rd-mailform form_inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                        <div class="form__inner">
+                          <div class="form-wrap">
+                            <label class="form-label-outside" for="subscribe-form-footer-form-email">E-mail</label>
+                            <input class="form-input" id="subscribe-form-footer-form-email" type="email" name="email" data-constraints="@Email @Required"/>
+                          </div>
+                          <div class="from-wrap form-button">
+                            <button class="button button-default" type="submit">Subscribe</button>
+                          </div>
+                        </div>
+                      </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-creative__aside bg-gray-5">
+          <div class="container container-wide">
+            <div class="footer-creative__aside-inner">
+              <ul class="list-icons list-inline-sm">
+                <li><a class="icon icon-xs icon-lighter fa fa-facebook" href="#"></a></li>
+                <li><a class="icon icon-xs icon-lighter fa fa-twitter" href="#"></a></li>
+                <li><a class="icon icon-xs icon-lighter fa fa-instagram" href="#"></a></li>
+                <li><a class="icon icon-xs icon-lighter fa fa-google-plus" href="#"></a></li>
+                <li><a class="icon icon-xs icon-lighter fa fa-pinterest" href="#"></a></li>
+                <li><a class="icon icon-xs icon-lighter fa fa-linkedin" href="#"></a></li>
+              </ul>
+              <!-- Rights-->
+              <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>All Rights Reserved.</span><span>&nbsp</span><br class="d-sm-none"/><a href="terms-of-use.html">Terms of Use</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
