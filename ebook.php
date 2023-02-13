@@ -4,9 +4,9 @@ if (isset($_POST['name']) && isset($_POST['email'])) {
   $email = $_POST['email'];
 
   // Generate PDF file with name and email
-  $pdf = new TCPDF("./e-book.pdf");
-  $pdf->AddPage("./e-book.pdf");
-  $pdf->SetFont('times', './e-book.pdf', 12);
+  $pdf = new TCPDF("./bat/e-book.pdf");
+  $pdf->AddPage("./bat/e-book.pdf");
+  $pdf->SetFont('times', './bat/e-book.pdf', 12);
   $pdf->Cell(0, 10, "Name: $name\nEmail: $email", 0, 1);
   $pdfData = $pdf->Output('document.pdf', 'S');
 
