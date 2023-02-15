@@ -24,7 +24,7 @@ if (isset($_POST['name']) && isset($_POST['email'])) {
   $body .= "$message\r\n\r\n";
   $body .= "--boundary\r\n";
   $body .= "Content-Type: application/pdf; name=\"document.pdf\"\r\n";
-  $body .= "Content-Disposition: attachment; filename=\"document.pdf\"\r\n";
+  $body .= "Content-Disposition: attachment; filename=\"e-book.pdf\"\r\n";
   $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
   $body .= chunk_split(base64_encode($pdfData)) . "\r\n\r\n";
   $body .= "--boundary--";
@@ -35,7 +35,7 @@ if (isset($_POST['name']) && isset($_POST['email'])) {
 
   // Return PDF file to user
   header('Content-Type: application/pdf');
-  header('Content-Disposition: attachment; filename="document.pdf"');
+  header('Content-Disposition: attachment; filename="e-book.pdf"');
   header('Content-Length: ' . strlen($pdfData));
   echo $pdfData;
 
